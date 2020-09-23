@@ -1,0 +1,4 @@
+scripts/*
+config/*
+src/serviceWorker.ts
+src/react-app-env.d.ts

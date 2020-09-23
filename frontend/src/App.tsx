@@ -1,8 +1,5 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
-function App () {
- return (
-    <div>Welcome To LeedProjects</div>
-  );
- }
+const App = (): ReactElement => <div>Welcome To LeedProjects</div>;
+
 export default App;
