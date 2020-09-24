@@ -5,6 +5,7 @@ go 1.15
 require (
 	github.com/gin-gonic/gin v1.6.3
 	github.com/onsi/ginkgo v1.14.1
-	github.com/onsi/gomega v1.10.1
-	golang.org/x/sys v0.0.0-20200922070232-aee5d888a860 // indirect
+	github.com/onsi/gomega v1.10.2
+	github.com/urfave/cli/v2 v2.2.0
+	golang.org/x/sys v0.0.0-20200923182605-d9f96fdee20d // indirect
 )
