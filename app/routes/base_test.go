@@ -1,7 +1,6 @@
 package routes_test
 
 import (
-	"fmt"
 	"net/http"
 	"net/http/httptest"
 
@@ -17,7 +16,6 @@ var _ = Describe("Base", func() {
 			w := httptest.NewRecorder()
 			req, _ := http.NewRequest("GET", "/ping", nil)
 			router.ServeHTTP(w, req)
-			fmt.Println(w.Code)
 			Expect(w.Code).To(Equal(200))
 			Expect(w.Body.String()).To(Equal("pong"))
 		})
