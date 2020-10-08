@@ -21,7 +21,7 @@ func getType(myvar interface{}) string {
 var _ = Describe("app", func() {
 	Describe("InitializeApp", func() {
 		It("Includes the router", func() {
-			lpapp := app.InitializeApp()
+			lpapp := app.InitializeApp(true)
 			Expect(fmt.Sprintf("%T", lpapp.Router)).To(Equal("*gin.Engine"))
 		})
 	})

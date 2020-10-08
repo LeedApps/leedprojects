@@ -8,8 +8,10 @@ import (
 
 var _ = Describe("DB related tasks", func() {
 	Describe("DBCommands", func() {
-		It("should be empty for now", func() {
-			Expect(len(tasks.DBCommands())).To(Equal(0))
+		It("should have init command", func() {
+			dbCommands := tasks.DBCommands(lpapp)
+			taskNames := getTaskNames(dbCommands)
+			Expect(taskNames[0]).To(Equal("init"))
 		})
 	})
 
